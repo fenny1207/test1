@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidessert有你甜點|填寫訂單資料</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=gambetta@400,1,300,600,701,2,501,401,301,601,500,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../media/css/bootstrap.css">
+    <script src="../media/js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="../media/css/order2.css">
+</head>
+
+<body>
+    <div class="headerPage"></div>
+    <picture>
+        <source media="(max-width: 768px)" srcset="../media/pic/cart/order2.png">
+        <img class="statement" src="../media/pic/cart/order2(2x).png">
+    </picture>
+
+    <div class=" mycontainer container">
+        <div class="row">
+            <table class="col-12 col-md-8  table1">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="item topic">1.運送</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="item">
+                            <label for="recipient">收件人*:</label>
+                            <input type="text" id="recipient" placeholder="王大明">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <label for="address">地址*:</label>
+                            <input type="text" name="" id="code" maxlength="3" value="408">
+                            <input type="text" id="address" size="35" placeholder="台中市西區公益路二段51號18樓">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <label for="tel">手機號碼*:</label>
+                            <input type="tel" name="" id="tel" maxlength="10" placeholder="09xx-xxxxxx">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <label for="email">電子信箱*:</label>
+                            <input type="email" name="" id="email" maxlength="10" placeholder="abc@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <label for="arrive">到貨日期*:</label>
+                            <input type="date" name="" id="arrive">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="col-12 col-md-3 table2 checkout-table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="item topic">訂單確認</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="item">總計商品數</td>
+                        <td class="item">2件</td>
+                    </tr>
+                    <tr>
+                        <td class="item">商品金額：</td>
+                        <td class="item">$875</td>
+                    </tr>
+                    <tr>
+                        <td class="item">運費：</td>
+                        <td class="item">$80</td>
+                    </tr>
+                    <tr>
+                        <td class="item">訂單總額：</td>
+                        <td class="item">$955</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+    <div class="mycontainer container">
+        <div class="row">
+            <table class="col-12 col-md-8 table3">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="item topic">2.付款</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="item">
+                            <p>選擇付款方式</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <input type="checkbox" name="" id="credit-card">
+                            <label for="credit-card">信用卡/金融簽帳卡</label>
+                            <input type="checkbox" name="" id="cash">
+                            <label for="cash">貨到付款</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <label for="credit-number">信用卡號碼*:</label>
+                            <!-- 這裡後端要寫之前朱老師教的focus jQuery -->
+                            <input type="tel" name="" id="credit-number" maxlength="16">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <label for="date">有效日期:</label>
+                            <!-- input 預設的date無法修改，之後要用js寫 -->
+                            <input type="date" name="" id="date">
+                            <input type="text" name="" id="cvn" placeholder="CVN*" size="5" maxlength="4">
+                            <label for="cvn">此代碼為印於信用卡正面或背面的三位或四位數字</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="mycontainer container">
+        <div class="row">
+            <table class="col-12 col-md-8 table4">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="item topic">3.索取發票</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="item">
+                            <p>發票類型</p>
+                        </td>
+                        <td class="item">
+                            <input type="checkbox" id="company">
+                            <label id="company" for="">公司用(統編)</label>
+                            <input type="checkbox" id="phone">
+                            <label id="phone" for="">手機載具</label>
+                            <input type="checkbox" id="donate">
+                            <label id="donate" for="">捐贈</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="/ABCDEF">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item" colspan="2" style="text-align:center">
+                            <a href="./order1.html"><button>返回購物車</button></a>
+                            <a href="./order3.html"><button>確認訂單</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footerPage"></div>
+
+    <script>
+        $(".headerPage").load("./nav.html");
+        $(".footerPage").load("./footer.html");
+    </script>
+</body>
+
+</html>
